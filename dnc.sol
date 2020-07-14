@@ -396,9 +396,9 @@ contract CappedToken is MintableToken {
  * DNC Token, totalSupply 100000000000000000
  */
 contract DncToken is BurnableToken, CappedToken(100000000000000000) {
-    string public name = "DNC Token";
-    string public symbol = "DNC";
-    uint8 public decimals = 8;
+    string public name = "唯爱币OLG";
+    string public symbol = "OLG";
+    uint8 public decimals = 18;
 
     function burn(uint256 _value) onlyOwner public {
         super.burn(_value);
